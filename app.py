@@ -12,11 +12,11 @@ from tensorflow.keras.preprocessing.image import img_to_array
 st.set_page_config(page_title="Brain Tumor MRI Classifier", layout="centered")
 
 # --- Local model path (already uploaded in the repo folder) ---
-MODEL_PATH = "custom_cnn_model.h5"
+MODEL_PATH = "custom_cnn_model1.h5"
 
 # --- Load the model ---
 with st.spinner("🔁 Loading model..."):
-    model = load_model("custom_cnn_model.h5")
+    model = load_model("custom_cnn_model1.h5")
     st.success("✅ Model loaded successfully!")
 
 # --- Class labels ---
